@@ -7,24 +7,18 @@ import NavLinks from "./NavLinks";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  const navbarStyle = {
-    background: "linear-gradient(to right, #FFFFFF, #007bff)",
-    boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.2)",
-    width: "100%",
-  };
-
   return (
-    <nav className="fixed top-0 z-50" style={navbarStyle}>
+    <nav className="fixed top-0 w-full bg-gradient-to-r from-white to-blue-500 shadow-md z-50">
       <div className="w-full flex items-center justify-between p-5">
-        <Link to="/">
+        <Link to="/" className="h-16">
           <img src={Logo} alt="logo" className="h-16" />
         </Link>
         <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
           <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
         </div>
-        <ul className="hidden md:flex items-center gap-8 font-[Poppins]">
+        <ul className="hidden md:flex items-center gap-8 font-poppins">
           <li>
-            <Link to="/qb" className="py-7 px-3 inline-block">
+            <Link to="/" className="py-7 px-3 inline-block">
               Home
             </Link>
           </li>

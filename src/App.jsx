@@ -4,9 +4,6 @@ import Navbar from "./components/Navbar/Navbar";
 import Workshop from "./pages/workshop/Workshop";
 import Internship from "./pages/internship/Internship";
 import Placement from "./pages/placement/Placement";
-import GetInTouch from "./pages/home/GetInTouch";
-import TalkToUs from "./pages/home/TalkToUs";
-import ContactUs from "./pages/home/ContactUs";
 import Javafsd from "./courses/javafsd/Javafsd";
 import Pythonfsd from "./courses/pythonfsd/Pythonfsd";
 import Footer from "./components/Footer";
@@ -29,9 +26,6 @@ const App = () => {
         <Route path="/internship" element={<Internship />} />
         <Route path="/placement" element={<Placement />} />
         <Route path="/robotics" element={<Robotics />} />
-        <Route path="/get-in-touch" element={<GetInTouch />} />
-        <Route path="/talk-to-us" element={<TalkToUs />} />
-        <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/courses/javafsd" element={<Javafsd />} />
         <Route path="/courses/pythonfsd" element={<Pythonfsd />} />
       </Routes>

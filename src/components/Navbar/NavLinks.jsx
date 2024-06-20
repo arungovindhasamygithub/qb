@@ -24,13 +24,27 @@ const NavLinks = ({ setOpen }) => {
     }
   };
 
+  const handleMouseEnter = (index) => {
+    setActiveIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveIndex(null);
+    setActiveSubIndex(null);
+  };
+
   return (
     <>
       {links.map((link, index) => (
-        <div key={index} className="relative group">
+        <div
+          key={index}
+          className="relative group"
+          onMouseEnter={() => handleMouseEnter(index)}
+          onMouseLeave={handleMouseLeave}
+        >
           <div className="px-3 text-left md:cursor-pointer">
             <h1
-              className="py-7 flex justify-between items-center md:pr-0 pr-5"
+              className="py-7 flex justify-between items-center md:pr-0 pr-5 "
               onClick={() => handleDropdown(index)}
             >
               <span className="truncate w-full">{link.name}</span>
@@ -39,30 +53,40 @@ const NavLinks = ({ setOpen }) => {
                   name={`${activeIndex === index ? "chevron-up" : "chevron-down"}`}
                 ></ion-icon>
               </span>
-              <span className="text-xl md:mt-1 md:ml-2 md:block hidden group-hover:rotate-180 group-hover:-mt-2">
-                <ion-icon name="chevron-down"></ion-icon>
+              <span className="text-xl md:mt-1 md:ml-2 md:block hidden transition-transform">
+                <ion-icon
+                  name={`${activeIndex === index ? "chevron-up" : "chevron-down"}`}
+                ></ion-icon>
               </span>
             </h1>
             {link.submenu && (
-              <div>
-                <div className="absolute top-20 hidden group-hover:md:block hover:md:block">
-                  <div className="py-3">
-                    <div className="w-4 h-4 left-3 absolute mt-1 bg-white rotate-45"></div>
-                  </div>
-                  <div className="bg-white p-5 grid grid-cols-3 gap-10">
-                    {link.sublinks.map((mysublinks, subIndex) => (
-                      <div key={subIndex}>
-                        <h1 className="text-lg font-semibold">{mysublinks.Head}</h1>
+              <div
+                className={`absolute top-full left-0 md:left-auto md:w-auto w-full lg:w-96 bg-white shadow-lg rounded-lg overflow-hidden ${
+                  activeIndex === index ? "block" : "hidden"
+                } transition duration-500 ease-in-out`}
+              >
+                <div className="py-3">
+                  <div className="w-4 h-4 left-3 absolute mt-1 bg-white rotate-45"></div>
+                </div>
+                <div className="p-5">
+                  {link.sublinks.map((mysublinks, subIndex) => (
+                    <div key={subIndex}>
+                      <h1 className="text-lg font-semibold mb-2">{mysublinks.Head}</h1>
+                      <ul>
                         {mysublinks.sublink.map((slink, slinkIndex) => (
                           <li key={slinkIndex} className="text-sm text-gray-600 my-2.5">
-                            <Link to={slink.link} className="hover:text-primary" onClick={() => setOpen(false)}>
+                            <Link
+                              to={slink.link}
+                              className="hover:text-blue-500"
+                              onClick={() => setOpen(false)}
+                            >
                               {slink.name}
                             </Link>
                           </li>
                         ))}
-                      </div>
-                    ))}
-                  </div>
+                      </ul>
+                    </div>
+                  ))}
                 </div>
               </div>
             )}
@@ -78,7 +102,9 @@ const NavLinks = ({ setOpen }) => {
                   >
                     <span className="truncate w-full">{slinks.Head}</span>
                     <span className="text-xl">
-                      <ion-icon name={`${activeSubIndex === slinksIndex ? "chevron-up" : "chevron-down"}`}></ion-icon>
+                      <ion-icon
+                        name={`${activeSubIndex === slinksIndex ? "chevron-up" : "chevron-down"}`}
+                      ></ion-icon>
                     </span>
                   </h1>
                   <div className={`${activeSubIndex === slinksIndex ? "block" : "hidden"} pl-10`}>
