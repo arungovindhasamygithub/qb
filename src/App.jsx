@@ -13,8 +13,6 @@ import Main from "./pages/home/Main";
 
 const App = () => {
   const location = useLocation();
-
-  // Check if the current route is "/robotics"
   const hideNavbarAndFooter = location.pathname === "/robotics";
 
   return (
