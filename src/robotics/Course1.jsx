@@ -1,51 +1,50 @@
 import React from 'react';
-import Course_1 from '../assets/Course_1.png';
-import Course_2 from '../assets/Course_2.png';
-import Course_3 from '../assets/Course_3.png';
-import Course_4 from '../assets/Course_4.png';
-import Course_5 from '../assets/Course_5.png';
-import Course_6 from '../assets/Course_6.png';
+import Course_1 from '../assets/Course_7.png';
+import Course_2 from '../assets/Course_12.png';
+import Course_3 from '../assets/Course_8.png';
+import Course_4 from '../assets/Course_9.png';
+import Course_5 from '../assets/Course_10.png';
+import Course_6 from '../assets/Course_11.png';
 
 const Course = () => {
   const courses = [
     {
       src: Course_1,
       title: 'Scratch/Pictoblox',
-      description: 'This course is designed for young enthusiasts to start their journey into robotics. They will learn the basics of robotics and coding through fun and interactive modules.',
+      description: 'Learn the basics of programming and robotics using Scratch and Pictoblox. This course is perfect for young beginners to start their coding journey with fun and interactive projects.',
       rating: 'Level 1',
     },
     {
       src: Course_2,
       title: 'MIT App Inventor',
-      description: 'In this course, students will explore the world of robotics more deeply, gaining hands-on experience with various robotic systems and learning advanced coding techniques.',
+      description: 'Discover the world of mobile app development with MIT App Inventor. Students will learn to create their own apps and understand the fundamentals of app design and development.',
       rating: 'Level 2',
     },
     {
       src: Course_3,
       title: 'Python For Kids',
-      description: 'Code Crafters focuses on teaching kids how to create and craft their own code. They will work on projects that enhance their logical thinking and problem-solving skills.',
+      description: 'Dive into the world of Python programming. This course teaches kids how to code in Python, focusing on developing problem-solving skills through fun and engaging projects.',
       rating: 'Level 3',
     },
     {
       src: Course_4,
-      title: 'AI For kids',
-      description: 'This course is for older students who want to become champions in robotics. It covers advanced topics and complex projects that will challenge and inspire them.',
+      title: 'AI For Kids',
+      description: 'Introduce kids to the exciting field of Artificial Intelligence. This course covers basic AI concepts and allows students to create simple AI projects and applications.',
       rating: 'Level 4',
     },
     {
       src: Course_5,
       title: 'AI Intermediate',
-      description: 'App Wizard is perfect for teens interested in app development. They will learn to design, develop, and deploy their own applications, gaining valuable skills for the future.',
+      description: 'Build on basic AI knowledge with intermediate concepts and projects. This course is designed for students who have some experience in AI and want to deepen their understanding.',
       rating: 'Level 5',
     },
     {
       src: Course_6,
       title: 'AI Advanced',
-      description: 'Robo Engineer is an advanced course for students who aspire to become robotics engineers. It covers in-depth engineering principles and hands-on projects.',
+      description: 'Master advanced AI techniques and applications. This course is for students who are serious about AI and robotics, covering complex topics and hands-on projects.',
       rating: 'Level 6',
     },
   ];
-
   return (
     <div className="py-12">
       <section className="container mx-auto px-6 lg:px-24">

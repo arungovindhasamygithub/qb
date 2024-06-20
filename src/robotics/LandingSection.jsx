@@ -1,5 +1,4 @@
 import React from 'react';
-import Log from '../assets/Logo.png';
 import Oto from '../assets/Oto.png';
 
 
@@ -14,7 +13,7 @@ const LandingSection = () => {
             src={Oto}
             alt="google partner logo"
             loading="lazy"
-            className="h-12 w-auto"
+            className="h-20 w-auto"
           />
         </div>
       </div>

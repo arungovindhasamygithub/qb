@@ -7,91 +7,91 @@ const FAQ = () => {
       <h1 className="text-center text-3xl lg:text-4xl font-bold mb-8">FAQ</h1>
       <div className="max-w-3xl mx-auto">
         <Accordion
-          title="What is robotics?"
+          title="What is Robofest 2024?"
           answer={
             <span>
-              Robotics is a field of engineering and science that involves the design, construction, operation, and use of robots.
+              Robofest 2024 is a state-level robotics competition where children can showcase their engineering, programming, and problem-solving skills through various challenges.
             </span>
           }
           className="transform transition-transform duration-200 hover:scale-105"
         />
         <Accordion
-          title="What are robots used for?"
+          title="Who can participate in Robofest 2024?"
           answer={
             <span>
-              Robots are used in various applications, including manufacturing, healthcare, military, space exploration, and entertainment.
+              Robofest 2024 is open to children and teens of all skill levels who are interested in robotics and coding.
             </span>
           }
           className="transform transition-transform duration-200 hover:scale-105"
         />
         <Accordion
-          title="What is a robot made of?"
+          title="What are the categories in Robofest 2024?"
           answer={
             <span>
-              A robot typically consists of a mechanical structure, sensors, actuators, and a control system.
+              The competition includes categories such as Line Following, Sumo Bots, RoboArts, and Game Challenges, each designed to test different aspects of robotics skills.
             </span>
           }
           className="transform transition-transform duration-200 hover:scale-105"
         />
         <Accordion
-          title="How do robots work?"
+          title="What is the schedule for Robofest 2024?"
           answer={
             <span>
-              Robots work by using sensors to gather information, processors to analyze it, and actuators to perform actions based on the analysis.
+              Robofest 2024 will be held over several days with specific dates for registration, preliminary rounds, and the final competition. Please check our official website for detailed schedules.
             </span>
           }
           className="transform transition-transform duration-200 hover:scale-105"
         />
         <Accordion
-          title="What is artificial intelligence in robotics?"
+          title="How can I register for Robofest 2024?"
           answer={
             <span>
-              Artificial intelligence in robotics involves creating robots that can perform tasks autonomously or with minimal human intervention.
+              Participants can register for Robofest 2024 through our official website. Registration details and deadlines will be provided there.
             </span>
           }
           className="transform transition-transform duration-200 hover:scale-105"
         />
         <Accordion
-          title="What is a humanoid robot?"
+          title="What are the rules for Robofest 2024?"
           answer={
             <span>
-              A humanoid robot is designed to resemble the human body in shape and function, often with the ability to walk, talk, and interact with humans.
+              The rules for each category of Robofest 2024 can be found on our website. Participants are encouraged to review the rules thoroughly to ensure compliance.
             </span>
           }
           className="transform transition-transform duration-200 hover:scale-105"
         />
         <Accordion
-          title="How are robots programmed?"
+          title="What resources are available to help me prepare for Robofest 2024?"
           answer={
             <span>
-              Robots are programmed using various programming languages, such as C++, Python, and Java, depending on the application and complexity.
+              We provide various resources including tutorials, past competition videos, and practice challenges on our website to help participants prepare for Robofest 2024.
             </span>
           }
           className="transform transition-transform duration-200 hover:scale-105"
         />
         <Accordion
-          title="What is robotic automation?"
+          title="Where will Robofest 2024 be held?"
           answer={
             <span>
-              Robotic automation involves using robots to perform repetitive tasks, increasing efficiency and reducing human error in industrial processes.
+              The location for Robofest 2024 will be announced on our official website. It will be held at a venue that can accommodate the different challenges and participants comfortably.
             </span>
           }
           className="transform transition-transform duration-200 hover:scale-105"
         />
         <Accordion
-          title="What are the challenges in robotics?"
+          title="What should I bring to Robofest 2024?"
           answer={
             <span>
-              Challenges in robotics include developing advanced sensors, achieving precise control, ensuring safety, and creating intelligent algorithms for decision-making.
+              Participants should bring their robots, necessary tools, chargers, and any other equipment specified in the competition rules. Details will be provided upon registration.
             </span>
           }
           className="transform transition-transform duration-200 hover:scale-105"
         />
         <Accordion
-          title="What is the future of robotics?"
+          title="How are winners determined in Robofest 2024?"
           answer={
             <span>
-              The future of robotics is expected to see advancements in AI, machine learning, and robotics integration in everyday life, including personal assistants and advanced medical robots.
+              Winners are determined based on their performance in the various challenges. Judging criteria include design, functionality, programming, and overall problem-solving skills.
             </span>
           }
           className="transform transition-transform duration-200 hover:scale-105"

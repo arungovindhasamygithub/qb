@@ -8,10 +8,13 @@ const RoboFest2024 = () => {
     <div ref={roboFestRef} className="px-6 py-14 md:px-10 md:py-16 lg:pb-12 bg-gray-100">
       <div className="max-w-7xl mx-auto bg-white p-8 rounded-lg shadow-lg">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#202658] md:text-5xl lg:text-6xl">
-            Celebrate with us at <span className="text-blue-600">RoboFest 2024!</span>
+          <h2 className="text-4xl font-bold text-[#202658] md:text-5xl lg:text-6xl mb-2">
+            Celebrate with us at <span className="text-blue-600">RoboFest 2024!</span> <br/>
           </h2>
-        </div>
+          <h1 className='text-blue-500 md:text-2xl'>Join us in celebrating Robofest 2024, a state-level robotics competition</h1>
+        
+          <h1 className='text-blue-500 md:text-2xl'>for children to showcase their engineering and programming skills through exciting challenges.</h1>
+          </div>
         <div className="flex flex-col lg:flex-row lg:gap-16">
           <div className="flex-1  p-8 rounded-lg shadow-md mb-8 lg:mb-0 lg:order-2">
             <h3 className="text-2xl font-bold text-[#202658] mb-4 text-center">

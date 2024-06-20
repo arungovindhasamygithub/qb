@@ -1,5 +1,5 @@
 import React from 'react';
-import headerBlob from '../assets/robotics.webp';
+import headerBlob from '../assets/robotics.png';
 import LandingSection from './LandingSection';
 
 const Head = () => {
@@ -19,7 +19,7 @@ const Head = () => {
           <img
             src={headerBlob}
             alt="Tech Illustration"
-            className="w-full md:w-4/5 lg:w-3/4 xl:w-2/3"
+            className="w-full h-80 md:w-5/5 lg:w-3/4 xl:w-3/3"
           />
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Course_1 from '../assets/Course_1.png';
-import Course_2 from '../assets/Course_2.png';
-import Course_3 from '../assets/Course_3.png';
+import Course_2 from '../assets/Course_9.png';
+import Course_3 from '../assets/Course_8.png';
 
 const PopularCourses = () => {
   const courses = [
