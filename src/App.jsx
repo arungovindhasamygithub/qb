@@ -10,25 +10,27 @@ import Footer from "./components/Footer";
 import Robotics from "./robotics/Robotics";
 import Main from "./pages/home/Main";
 
+
 const App = () => {
   const location = useLocation();
+
+  // Check if the current route is "/robotics"
   const hideNavbarAndFooter = location.pathname === "/robotics";
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div>
       {!hideNavbarAndFooter && <Navbar />}
-      <main className="flex-grow">
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/workshop" element={<Workshop />} />
-          <Route path="/internship" element={<Internship />} />
-          <Route path="/placement" element={<Placement />} />
-          <Route path="/robotics" element={<Robotics />} />
-          <Route path="/courses/javafsd" element={<Javafsd />} />
-          <Route path="/courses/pythonfsd" element={<Pythonfsd />} />
-        </Routes>
-      </main>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/workshop" element={<Workshop />} />
+        <Route path="/internship" element={<Internship />} />
+        <Route path="/placement" element={<Placement />} />
+        <Route path="/robotics" element={<Robotics />} />
+        <Route path="/courses/javafsd" element={<Javafsd />} />
+        <Route path="/courses/pythonfsd" element={<Pythonfsd />} />
+      </Routes>
       {!hideNavbarAndFooter && <Footer />}
+
     </div>
   );
 };
