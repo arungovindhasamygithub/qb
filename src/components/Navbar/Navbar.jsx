@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
 import Button from "./Button";
 import NavLinks from "./NavLinks";
@@ -10,38 +9,38 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full bg-gradient-to-r from-white to-blue-500 shadow-md z-50">
       <div className="w-full flex items-center justify-between p-5">
-        <Link to="/" className="h-16">
+        <a href="/" className="h-16">
           <img src={Logo} alt="logo" className="h-16" />
-        </Link>
+        </a>
         <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
           <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
         </div>
         <ul className="hidden md:flex items-center gap-8 font-poppins">
           <li>
-            <Link to="/" className="py-7 px-3 inline-block">
+            <a href="/" className="py-7 px-3 inline-block">
               Home
-            </Link>
+            </a>
           </li>
           <NavLinks setOpen={setOpen} />
           <li>
-            <Link to="/workshop" className="py-7 px-3 inline-block">
+            <a href="/workshop" className="py-7 px-3 inline-block">
               Workshop
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/internship" className="py-7 px-3 inline-block">
+            <a href="/internship" className="py-7 px-3 inline-block">
               Internship
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/placement" className="py-7 px-3 inline-block">
+            <a href="/placement" className="py-7 px-3 inline-block">
               Placement
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/robotics" className="py-7 px-3 inline-block">
+            <a href="/robotics" className="py-7 px-3 inline-block">
               Robotics
-            </Link>
+            </a>
           </li>
         </ul>
         <div className="hidden md:block">
@@ -55,30 +54,30 @@ const Navbar = () => {
         }`}
       >
         <li>
-          <Link to="/" className="py-7 px-3 inline-block" onClick={() => setOpen(false)}>
+          <a href="/" className="py-7 px-3 inline-block" onClick={() => setOpen(false)}>
             Home
-          </Link>
+          </a>
         </li>
         <NavLinks setOpen={setOpen} />
         <li>
-          <Link to="/workshop" className="py-7 px-3 inline-block" onClick={() => setOpen(false)}>
+          <a href="/workshop" className="py-7 px-3 inline-block" onClick={() => setOpen(false)}>
             Workshop
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/internship" className="py-7 px-3 inline-block" onClick={() => setOpen(false)}>
+          <a href="/internship" className="py-7 px-3 inline-block" onClick={() => setOpen(false)}>
             Internship
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/placement" className="py-7 px-3 inline-block" onClick={() => setOpen(false)}>
+          <a href="/placement" className="py-7 px-3 inline-block" onClick={() => setOpen(false)}>
             Placement
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/robotics" className="py-7 px-3 inline-block" onClick={() => setOpen(false)}>
+          <a href="/robotics" className="py-7 px-3 inline-block" onClick={() => setOpen(false)}>
             Robotics
-          </Link>
+          </a>
         </li>
         <div className="py-5">
           <Button />
