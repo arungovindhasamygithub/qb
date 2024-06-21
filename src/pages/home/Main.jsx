@@ -10,7 +10,6 @@ const Main = () => {
     <div>
       <Home />
       <Section />
-    
       <FeaturesSection />
       <Section2 />
       <Lastsection />
