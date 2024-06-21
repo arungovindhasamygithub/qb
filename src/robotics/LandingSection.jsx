@@ -13,7 +13,7 @@ const LandingSection = () => {
             src={Oto}
             alt="google partner logo"
             loading="lazy"
-            className="h-20 w-auto"
+            className="h-24 w-auto"
           />
         </div>
       </div>

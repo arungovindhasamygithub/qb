@@ -98,7 +98,7 @@ const PreviousWorkshopVideos = () => {
           </button>
           <div className="aspect-w-16 aspect-h-9">
             <iframe
-              width="550"
+              width="350"
               height="450" // Adjusted height for larger iframe
               src={currentVideo.replace("watch?v=", "embed/")}
               title="YouTube video player"

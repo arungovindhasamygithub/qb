@@ -25,7 +25,7 @@ const FAQ = () => {
           className="transform transition-transform duration-200 hover:scale-105"
         />
         <Accordion
-          title="What are the categories in Robofest 2024?"
+          title="What are the categories ?"
           answer={
             <span>
               The competition includes categories such as Line Following, Sumo Bots, RoboArts, and Game Challenges, each designed to test different aspects of robotics skills.
@@ -34,7 +34,7 @@ const FAQ = () => {
           className="transform transition-transform duration-200 hover:scale-105"
         />
         <Accordion
-          title="What is the schedule for Robofest 2024?"
+          title="What is the schedule ?"
           answer={
             <span>
               Robofest 2024 will be held over several days with specific dates for registration, preliminary rounds, and the final competition. Please check our official website for detailed schedules.
@@ -61,7 +61,7 @@ const FAQ = () => {
           className="transform transition-transform duration-200 hover:scale-105"
         />
         <Accordion
-          title="What resources are available to help me prepare for Robofest 2024?"
+          title="What resources are available?"
           answer={
             <span>
               We provide various resources including tutorials, past competition videos, and practice challenges on our website to help participants prepare for Robofest 2024.
@@ -88,7 +88,7 @@ const FAQ = () => {
           className="transform transition-transform duration-200 hover:scale-105"
         />
         <Accordion
-          title="How are winners determined in Robofest 2024?"
+          title="How are winners determined ?"
           answer={
             <span>
               Winners are determined based on their performance in the various challenges. Judging criteria include design, functionality, programming, and overall problem-solving skills.
