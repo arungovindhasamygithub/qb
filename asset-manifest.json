@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/qb/static/css/main.f050f835.css",
-    "main.js": "/qb/static/js/main.156f39c4.js",
+    "main.css": "/qb/static/css/main.af7bd7a7.css",
+    "main.js": "/qb/static/js/main.1f58341c.js",
     "static/media/Coding.png": "/qb/static/media/Coding.85953d10e52fb093735a.png",
     "static/media/Course_9.png": "/qb/static/media/Course_9.84b66b7118791293460e.png",
     "static/media/Course_2.png": "/qb/static/media/Course_2.2aeefabddcdb4f6bb9ac.png",
@@ -20,12 +20,9 @@
     "static/media/Future.png": "/qb/static/media/Future.128c255daca9f7fe4455.png",
     "static/media/Course_6.png": "/qb/static/media/Course_6.daa96c41a93b8ce35452.png",
     "static/media/Oto.png": "/qb/static/media/Oto.c5ef34f47b42ddc300e5.png",
-    "static/media/Self-Paced Courses.png": "/qb/static/media/Self-Paced Courses.0fa908496e2de9f82526.png",
-    "static/media/Tailored Solutions for Corporates.png": "/qb/static/media/Tailored Solutions for Corporates.3e6356ed639e4dccfc3c.png",
     "static/media/main.png": "/qb/static/media/main.61ae90562535f0842140.png",
     "static/media/Java.png": "/qb/static/media/Java.231b03d08a04e30fac35.png",
     "static/media/race.png": "/qb/static/media/race.7ac4d6d6169acc5e7786.png",
-    "static/media/Interactive Live Classes.png": "/qb/static/media/Interactive Live Classes.e0e404779fe7e1100655.png",
     "static/media/diy.png": "/qb/static/media/diy.ad7e84e4dffb67c8b8ab.png",
     "static/media/water.png": "/qb/static/media/water.d9fecc26226fd694c456.png",
     "static/media/sc.png": "/qb/static/media/sc.2a5ffb3d89004edaca20.png",
@@ -39,17 +36,15 @@
     "static/media/outcome.svg": "/qb/static/media/outcome.81689c4711e1acce661c0631ea276cef.svg",
     "static/media/Average-package.svg": "/qb/static/media/Average-package.d248a5767bd4bad18d02c62ff3c594fd.svg",
     "static/media/send.svg": "/qb/static/media/send.fec1bcd836edbf28bd264fd5ba0ad61a.svg",
-    "static/media/close.svg": "/qb/static/media/close.81eabd5b0e4b5a6a5c085ddc1e0381e0.svg",
-    "static/media/open.svg": "/qb/static/media/open.8c30d36d4ad13836b3fb52ed1d90aa61.svg",
     "index.html": "/qb/index.html",
     "static/media/downlode.svg": "/qb/static/media/downlode.0f7d6b0a5374ba13e3be6a06b5fd24a2.svg",
     "static/media/plus.svg": "/qb/static/media/plus.17a68b59f0f0e088dab0de6fecd891b8.svg",
     "static/media/one.svg": "/qb/static/media/one.3a2760321d5bf60b4489cfd857f182ac.svg",
-    "main.f050f835.css.map": "/qb/static/css/main.f050f835.css.map",
-    "main.156f39c4.js.map": "/qb/static/js/main.156f39c4.js.map"
+    "main.af7bd7a7.css.map": "/qb/static/css/main.af7bd7a7.css.map",
+    "main.1f58341c.js.map": "/qb/static/js/main.1f58341c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f050f835.css",
-    "static/js/main.156f39c4.js"
+    "static/css/main.af7bd7a7.css",
+    "static/js/main.1f58341c.js"
   ]
 }
