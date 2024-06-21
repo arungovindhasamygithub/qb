@@ -1,19 +1,18 @@
-import React from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import Workshop from "./pages/workshop/Workshop";
-import Internship from "./pages/internship/Internship";
-import Placement from "./pages/placement/Placement";
-import Javafsd from "./courses/javafsd/Javafsd";
-import Pythonfsd from "./courses/pythonfsd/Pythonfsd";
-import Footer from "./components/Footer";
-import Robotics from "./robotics/Robotics";
-import Main from "./pages/home/Main";
-
+import React from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Workshop from './pages/workshop/Workshop';
+import Internship from './pages/internship/Internship';
+import Placement from './pages/placement/Placement';
+import Javafsd from './courses/javafsd/Javafsd';
+import Pythonfsd from './courses/pythonfsd/Pythonfsd';
+import Footer from './components/Footer';
+import Robotics from './robotics/Robotics';
+import Main from './pages/home/Main';
 
 const App = () => {
   const location = useLocation();
-  const hideNavbarAndFooter = location.pathname === "/robotics";
+  const hideNavbarAndFooter = location.pathname === '/robotics';
 
   return (
     <div>
@@ -28,7 +27,6 @@ const App = () => {
         <Route path="/courses/pythonfsd" element={<Pythonfsd />} />
       </Routes>
       {!hideNavbarAndFooter && <Footer />}
-
     </div>
   );
 };
