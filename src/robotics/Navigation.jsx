@@ -1,15 +1,38 @@
-import React, { useState } from 'react';
-import { Link } from 'react-scroll';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, Events, animateScroll as scroll, scroller } from 'react-scroll';
+import { useLocation, useNavigate } from 'react-router-dom'; // Added useNavigate for navigation
 import Log from '../assets/Logo.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navigate = useNavigate();
+  const [activeLink, setActiveLink] = useState('home');
+  const location = useLocation();
+  const navigate = useNavigate(); // Hook for navigation
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 80;
+      const sections = ['home', 'robofest', 'courses', 'why-robotics', 'workshops', 'contact'];
+
+      sections.forEach(section => {
+        const element = document.getElementById(section);
+        if (element && scrollPosition >= element.offsetTop && scrollPosition < element.offsetTop + element.offsetHeight) {
+          setActiveLink(section);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setActiveLink(location.hash.substring(1));
+  }, [location]);
 
   const handleSoftwareClick = () => {
     setIsOpen(false);
-    navigate('/'); 
+    navigate('/'); // Navigate to home route on software click
   };
 
   return (
@@ -18,12 +41,12 @@ const Navigation = () => {
         <Logo />
       </div>
       <div className="hidden md:flex space-x-6">
-        <NavLink to="home" offset={-80}>Home</NavLink>
-        <NavLink to="robofest" offset={-80}>RoboFest 2024</NavLink>
-        <NavLink to="courses" offset={-80}>Our Courses</NavLink>
-        <NavLink to="why-robotics" offset={-80}>Why Robotics</NavLink>
-        <NavLink to="workshops" offset={-80}>Our Workshops</NavLink>
-        <NavLink to="contact" offset={-80}>Contact</NavLink>
+        <NavLink to="home" offset={-80} activeClass="font-bold">Home</NavLink>
+        <NavLink to="robofest" offset={-80} activeClass="font-bold">RoboFest 2024</NavLink>
+        <NavLink to="courses" offset={-80} activeClass="font-bold">Our Courses</NavLink>
+        <NavLink to="why-robotics" offset={-80} activeClass="font-bold">Why Robotics</NavLink>
+        <NavLink to="workshops" offset={-80} activeClass="font-bold">Our Workshops</NavLink>
+        <NavLink to="contact" offset={-80} activeClass="font-bold">Contact</NavLink>
         <button onClick={handleSoftwareClick} className="hover:underline text-white py-2 px-4 block md:inline-block cursor-pointer">Software</button>
       </div>
       <div className="md:hidden">
@@ -33,12 +56,12 @@ const Navigation = () => {
       </div>
       {isOpen && (
         <div className="absolute top-20 left-0 w-full bg-purple-800 flex flex-col items-center md:hidden">
-          <NavLink to="home" offset={-80} onClick={() => setIsOpen(false)}>Home</NavLink>
-          <NavLink to="robofest" offset={-80} onClick={() => setIsOpen(false)}>RoboFest 2024</NavLink>
-          <NavLink to="courses" offset={-80} onClick={() => setIsOpen(false)}>Our Courses</NavLink>
-          <NavLink to="why-robotics" offset={-80} onClick={() => setIsOpen(false)}>Why Robotics</NavLink>
-          <NavLink to="workshops" offset={-80} onClick={() => setIsOpen(false)}>Our Workshops</NavLink>
-          <NavLink to="contact" offset={-80} onClick={() => setIsOpen(false)}>Contact</NavLink>
+          <NavLink to="home" offset={-80} activeClass="font-bold" onClick={() => setIsOpen(false)}>Home</NavLink>
+          <NavLink to="robofest" offset={-80} activeClass="font-bold" onClick={() => setIsOpen(false)}>RoboFest 2024</NavLink>
+          <NavLink to="courses" offset={-80} activeClass="font-bold" onClick={() => setIsOpen(false)}>Our Courses</NavLink>
+          <NavLink to="why-robotics" offset={-80} activeClass="font-bold" onClick={() => setIsOpen(false)}>Why Robotics</NavLink>
+          <NavLink to="workshops" offset={-80} activeClass="font-bold" onClick={() => setIsOpen(false)}>Our Workshops</NavLink>
+          <NavLink to="contact" offset={-80} activeClass="font-bold" onClick={() => setIsOpen(false)}>Contact</NavLink>
           <button onClick={handleSoftwareClick} className="hover:underline text-white py-2 px-4 block md:inline-block cursor-pointer">Software</button>
         </div>
       )}
@@ -46,13 +69,15 @@ const Navigation = () => {
   );
 };
 
-const NavLink = ({ to, offset, children, onClick }) => {
+const NavLink = ({ to, offset, activeClass, children, onClick }) => {
   return (
     <Link
       to={to}
       smooth={true}
       duration={500}
       offset={offset}
+      spy={true}
+      activeClass={activeClass}
       className="hover:underline text-white py-2 px-4 block md:inline-block cursor-pointer"
       onClick={onClick}
     >

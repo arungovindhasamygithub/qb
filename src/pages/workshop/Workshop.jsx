@@ -6,7 +6,7 @@ import ProjectSection from './ProjectSection'
 
 const Workshop = () => {
   return (
-    <div className="mt-32" >
+    <div className="mt-12" >
       {/* <Banner /> */}
   
       <ServicesSection />

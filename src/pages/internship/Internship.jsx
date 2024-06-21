@@ -4,7 +4,7 @@ import InternshipsSection from './InternshipsSection'
 
 const Internship = () => {
   return (
-    <div className="mt-32" >
+    <div className="mt-12" >
     <HeroModule />
     <InternshipsSection />
     </div>

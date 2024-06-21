@@ -4,7 +4,7 @@ import planeIcon from '../../assets/send.svg';
 import placement from '../../assets/main.png';
 const Placement = () => {
   return (
-    <div id="placements_sec" className="px-6 py-14 bg-[#F9F9F9] md:px-10 md:py-16 lg:pb-12 mt-32">
+    <div id="placements_sec" className="px-6 py-14 bg-[#F9F9F9] md:px-10 md:py-16 lg:pb-12 mt-12">
       <div className="lg:bg-no-repeat lg:bg-center-top-240px lg:bg-bg-placement flex flex-col justify-center items-center max-w-[1160px] m-auto">
         <div>
           <p className="text-[28px] font-bold text-center text-[#202658] md:text-[32px] lg:font-bold leading-[39px] sm:leading-[49px]">

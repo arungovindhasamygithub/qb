@@ -33,7 +33,7 @@ const RoboFest2024 = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            REGISTER NOW
+            Register RoboFest 2024
           </a>
             </div>
           </div>

@@ -1,21 +1,29 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
 import Button from "./Button";
 import NavLinks from "./NavLinks";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
 
   const handleMenuToggle = () => {
     setOpen(!open);
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-gradient-to-r from-white to-blue-500 shadow-md z-50">
-      <div className="w-full flex items-center justify-between p-5">
-        <Link to="/" className="h-16">
-          <img src={Logo} alt="logo" className="h-16" />
+    <nav
+      className="fixed top-0 w-full z-50 h-20"
+      style={{
+        backgroundImage:
+          "linear-gradient(to bottom right, #100D25, #100D25, #190B69)",
+        color: "white",
+      }}
+    >
+      <div className="w-full flex items-center justify-between px-5">
+        <Link to="/" className="h-20 flex items-center">
+          <img src={Logo} alt="logo" className="w-48 h-auto" />
         </Link>
         {/* Hamburger menu icon for mobile */}
         <div className="md:hidden text-3xl" onClick={handleMenuToggle}>
@@ -24,28 +32,53 @@ const Navbar = () => {
         {/* Desktop navigation links */}
         <ul className="hidden md:flex items-center gap-8 font-poppins">
           <li>
-            <Link to="/" className="py-7 px-3 inline-block">
+            <Link
+              to="/"
+              className={`py-7 px-3 inline-block ${
+                location.pathname === "/" ? "text-blue-500" : ""
+              }`}
+            >
               Home
             </Link>
           </li>
           <NavLinks setOpen={setOpen} />
           <li>
-            <Link to="/workshop" className="py-7 px-3 inline-block">
+            <Link
+              to="/workshop"
+              className={`py-7 px-3 inline-block ${
+                location.pathname === "/workshop" ? "text-blue-500" : ""
+              }`}
+            >
               Workshop
             </Link>
           </li>
           <li>
-            <Link to="/internship" className="py-7 px-3 inline-block">
+            <Link
+              to="/internship"
+              className={`py-7 px-3 inline-block ${
+                location.pathname === "/internship" ? "text-blue-500" : ""
+              }`}
+            >
               Internship
             </Link>
           </li>
           <li>
-            <Link to="/placement" className="py-7 px-3 inline-block">
+            <Link
+              to="/placement"
+              className={`py-7 px-3 inline-block ${
+                location.pathname === "/placement" ? "text-blue-500" : ""
+              }`}
+            >
               Placement
             </Link>
           </li>
           <li>
-            <Link to="/robotics" className="py-7 px-3 inline-block">
+            <Link
+              to="/robotics"
+              className={`py-7 px-3 inline-block ${
+                location.pathname === "/robotics" ? "text-blue-500" : ""
+              }`}
+            >
               Robotics
             </Link>
           </li>
@@ -57,14 +90,16 @@ const Navbar = () => {
       </div>
       {/* Mobile nav */}
       <ul
-        className={`md:hidden bg-blue-500 fixed w-full top-16 left-0 ${
+        className={`md:hidden bg-blue-500 fixed w-full top-20 left-0 ${
           open ? "block" : "hidden"
         }`}
       >
         <li>
           <Link
             to="/"
-            className="block py-3 px-4 text-white"
+            className={`block py-3 px-4 text-white ${
+              location.pathname === "/" ? "text-blue-500" : ""
+            }`}
             onClick={handleMenuToggle}
           >
             Home
@@ -74,7 +109,9 @@ const Navbar = () => {
         <li>
           <Link
             to="/workshop"
-            className="block py-3 px-4 text-white"
+            className={`block py-3 px-4 text-white ${
+              location.pathname === "/workshop" ? "text-blue-500" : ""
+            }`}
             onClick={handleMenuToggle}
           >
             Workshop
@@ -83,7 +120,9 @@ const Navbar = () => {
         <li>
           <Link
             to="/internship"
-            className="block py-3 px-4 text-white"
+            className={`block py-3 px-4 text-white ${
+              location.pathname === "/internship" ? "text-blue-500" : ""
+            }`}
             onClick={handleMenuToggle}
           >
             Internship
@@ -92,7 +131,9 @@ const Navbar = () => {
         <li>
           <Link
             to="/placement"
-            className="block py-3 px-4 text-white"
+            className={`block py-3 px-4 text-white ${
+              location.pathname === "/placement" ? "text-blue-500" : ""
+            }`}
             onClick={handleMenuToggle}
           >
             Placement
@@ -101,7 +142,9 @@ const Navbar = () => {
         <li>
           <Link
             to="/robotics"
-            className="block py-3 px-4 text-white"
+            className={`block py-3 px-4 text-white ${
+              location.pathname === "/robotics" ? "text-blue-500" : ""
+            }`}
             onClick={handleMenuToggle}
           >
             Robotics
