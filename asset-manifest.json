@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/qb/static/css/main.af7bd7a7.css",
-    "main.js": "/qb/static/js/main.1f58341c.js",
+    "main.css": "/qb/static/css/main.1f407a28.css",
+    "main.js": "/qb/static/js/main.fe486327.js",
     "static/media/Coding.png": "/qb/static/media/Coding.85953d10e52fb093735a.png",
     "static/media/Course_9.png": "/qb/static/media/Course_9.84b66b7118791293460e.png",
     "static/media/Course_2.png": "/qb/static/media/Course_2.2aeefabddcdb4f6bb9ac.png",
@@ -40,11 +40,11 @@
     "static/media/downlode.svg": "/qb/static/media/downlode.0f7d6b0a5374ba13e3be6a06b5fd24a2.svg",
     "static/media/plus.svg": "/qb/static/media/plus.17a68b59f0f0e088dab0de6fecd891b8.svg",
     "static/media/one.svg": "/qb/static/media/one.3a2760321d5bf60b4489cfd857f182ac.svg",
-    "main.af7bd7a7.css.map": "/qb/static/css/main.af7bd7a7.css.map",
-    "main.1f58341c.js.map": "/qb/static/js/main.1f58341c.js.map"
+    "main.1f407a28.css.map": "/qb/static/css/main.1f407a28.css.map",
+    "main.fe486327.js.map": "/qb/static/js/main.fe486327.js.map"
   },
   "entrypoints": [
-    "static/css/main.af7bd7a7.css",
-    "static/js/main.1f58341c.js"
+    "static/css/main.1f407a28.css",
+    "static/js/main.fe486327.js"
   ]
 }
