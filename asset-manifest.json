@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/qb/static/css/main.29c9f27b.css",
-    "main.js": "/qb/static/js/main.a461f287.js",
+    "main.css": "/qb/static/css/main.f050f835.css",
+    "main.js": "/qb/static/js/main.5622e95a.js",
     "static/media/Coding.png": "/qb/static/media/Coding.85953d10e52fb093735a.png",
     "static/media/Course_9.png": "/qb/static/media/Course_9.84b66b7118791293460e.png",
     "static/media/Course_2.png": "/qb/static/media/Course_2.2aeefabddcdb4f6bb9ac.png",
@@ -24,7 +24,13 @@
     "static/media/Tailored Solutions for Corporates.png": "/qb/static/media/Tailored Solutions for Corporates.3e6356ed639e4dccfc3c.png",
     "static/media/main.png": "/qb/static/media/main.61ae90562535f0842140.png",
     "static/media/Java.png": "/qb/static/media/Java.231b03d08a04e30fac35.png",
+    "static/media/race.png": "/qb/static/media/race.7ac4d6d6169acc5e7786.png",
     "static/media/Interactive Live Classes.png": "/qb/static/media/Interactive Live Classes.e0e404779fe7e1100655.png",
+    "static/media/diy.png": "/qb/static/media/diy.ad7e84e4dffb67c8b8ab.png",
+    "static/media/water.png": "/qb/static/media/water.d9fecc26226fd694c456.png",
+    "static/media/sc.png": "/qb/static/media/sc.2a5ffb3d89004edaca20.png",
+    "static/media/tec.png": "/qb/static/media/tec.dd4ba6b6376cffb464d2.png",
+    "static/media/drone.png": "/qb/static/media/drone.2b16a80bb9637ddd737f.png",
     "static/media/logo_1.png": "/qb/static/media/logo_1.79e960efed2ab41f9ec1.png",
     "static/media/Logo.png": "/qb/static/media/Logo.36dc5e3e91ce2a37c1d1.png",
     "static/media/cal.svg": "/qb/static/media/cal.0fc17e7d246199e2cb2c6abe750621e8.svg",
@@ -39,11 +45,11 @@
     "static/media/downlode.svg": "/qb/static/media/downlode.0f7d6b0a5374ba13e3be6a06b5fd24a2.svg",
     "static/media/plus.svg": "/qb/static/media/plus.17a68b59f0f0e088dab0de6fecd891b8.svg",
     "static/media/one.svg": "/qb/static/media/one.3a2760321d5bf60b4489cfd857f182ac.svg",
-    "main.29c9f27b.css.map": "/qb/static/css/main.29c9f27b.css.map",
-    "main.a461f287.js.map": "/qb/static/js/main.a461f287.js.map"
+    "main.f050f835.css.map": "/qb/static/css/main.f050f835.css.map",
+    "main.5622e95a.js.map": "/qb/static/js/main.5622e95a.js.map"
   },
   "entrypoints": [
-    "static/css/main.29c9f27b.css",
-    "static/js/main.a461f287.js"
+    "static/css/main.f050f835.css",
+    "static/js/main.5622e95a.js"
   ]
 }
