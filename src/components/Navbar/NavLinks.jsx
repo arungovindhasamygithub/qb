@@ -24,36 +24,17 @@ const NavLinks = ({ setOpen }) => {
     }
   };
 
-  const handleMouseEnter = (index) => {
-    setActiveIndex(index);
-  };
-
-  const handleMouseLeave = () => {
-    setActiveIndex(null);
-    setActiveSubIndex(null);
-  };
-
   return (
-    <>
+    <div className="md:flex">
       {links.map((link, index) => (
-        <div
-          key={index}
-          className="relative group"
-          onMouseEnter={() => handleMouseEnter(index)}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className="px-3 text-left md:cursor-pointer">
+        <div key={index} className="relative group md:cursor-pointer">
+          <div className="px-3 text-left">
             <h1
-              className="py-7 flex justify-between items-center md:pr-0 pr-5 "
+              className="py-4 flex justify-between items-center md:pr-0 pr-5"
               onClick={() => handleDropdown(index)}
             >
               <span className="truncate w-full">{link.name}</span>
-              <span className="text-xl md:hidden inline">
-                <ion-icon
-                  name={`${activeIndex === index ? "chevron-up" : "chevron-down"}`}
-                ></ion-icon>
-              </span>
-              <span className="text-xl md:mt-1 md:ml-2 md:block hidden transition-transform">
+              <span className="text-xl md:hidden">
                 <ion-icon
                   name={`${activeIndex === index ? "chevron-up" : "chevron-down"}`}
                 ></ion-icon>
@@ -61,14 +42,14 @@ const NavLinks = ({ setOpen }) => {
             </h1>
             {link.submenu && (
               <div
-                className={`absolute top-full left-0 md:left-auto md:w-auto w-full lg:w-96 bg-white shadow-lg rounded-lg overflow-hidden ${
+                className={`${
                   activeIndex === index ? "block" : "hidden"
-                } transition duration-500 ease-in-out`}
+                } md:absolute md:top-full md:left-0 md:w-auto w-full bg-white md:shadow-lg md:rounded-lg overflow-hidden`}
               >
-                <div className="py-3">
-                  <div className="w-4 h-4 left-3 absolute mt-1 bg-white rotate-45"></div>
+                <div className="md:py-3">
+                  <div className="md:w-4 md:h-4 md:left-3 md:absolute md:mt-1 bg-white md:rotate-45"></div>
                 </div>
-                <div className="p-5">
+                <div className="md:p-5">
                   {link.sublinks.map((mysublinks, subIndex) => (
                     <div key={subIndex}>
                       <h1 className="text-lg font-semibold mb-2">{mysublinks.Head}</h1>
@@ -122,7 +103,7 @@ const NavLinks = ({ setOpen }) => {
           )}
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
