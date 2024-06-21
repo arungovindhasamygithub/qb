@@ -12,10 +12,10 @@ const Navigation = () => {
       <div className="hidden md:flex space-x-6">
         <NavLink href="/">Home</NavLink>
         <NavLink href="#robofest">RoboFest 2024</NavLink>
-        <NavLink href="#faq">FAQ</NavLink>
+            <NavLink href="#courses">Our Courses</NavLink>
         <NavLink href="#why-robotics">Why Robotics</NavLink>
-        <NavLink href="#courses">Our Courses</NavLink>
         <NavLink href="#workshops">Our Workshops</NavLink>
+        <NavLink href="#faq">Contact</NavLink>
       </div>
       <div className="md:hidden">
         <button onClick={() => setIsOpen(!isOpen)} className="text-white">

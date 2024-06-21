@@ -8,7 +8,7 @@ const LandingSection = () => {
     <div className="lg:col-span-7 md:col-span-7 p-6 bg-purple-800">
           <div className="flex items-center mb-6">
                 <div className="partner-data">
-          <p className="text-white">Officially Authorized Partner of</p>
+          <p className="text-white">Official Authorized Partner of</p>
           <img
             src={Oto}
             alt="google partner logo"
