@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/qb/static/css/main.cb92728f.css",
-    "main.js": "/qb/static/js/main.a10f8b90.js",
+    "main.css": "/qb/static/css/main.eac12d66.css",
+    "main.js": "/qb/static/js/main.73b1867b.js",
     "static/media/robotics.png": "/qb/static/media/robotics.f3e4864ff73d6a93a0ea.png",
     "static/media/Coding.png": "/qb/static/media/Coding.85953d10e52fb093735a.png",
     "static/media/Course_9.png": "/qb/static/media/Course_9.84b66b7118791293460e.png",
@@ -45,11 +45,11 @@
     "static/media/downlode.svg": "/qb/static/media/downlode.0f7d6b0a5374ba13e3be6a06b5fd24a2.svg",
     "static/media/plus.svg": "/qb/static/media/plus.17a68b59f0f0e088dab0de6fecd891b8.svg",
     "static/media/one.svg": "/qb/static/media/one.3a2760321d5bf60b4489cfd857f182ac.svg",
-    "main.cb92728f.css.map": "/qb/static/css/main.cb92728f.css.map",
-    "main.a10f8b90.js.map": "/qb/static/js/main.a10f8b90.js.map"
+    "main.eac12d66.css.map": "/qb/static/css/main.eac12d66.css.map",
+    "main.73b1867b.js.map": "/qb/static/js/main.73b1867b.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb92728f.css",
-    "static/js/main.a10f8b90.js"
+    "static/css/main.eac12d66.css",
+    "static/js/main.73b1867b.js"
   ]
 }
