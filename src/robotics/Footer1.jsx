@@ -48,7 +48,7 @@ const Footer1 = () => {
         <hr className="border-gray-700 my-6" />
         {/* Copyright */}
         <div className="text-center text-gray-400 text-sm">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center mr-12">
             <p className="float-left">&copy; 2024 QBee Academy. All rights reserved.</p>
             <div className="text-right">
               <a href="#" className="text-gray-300 hover:text-white mr-4">

@@ -19,7 +19,7 @@ const LandingSection = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Register RoboFest
+        Register RoboFest 2024
         <i className="fa fa-chevron-right ml-2" aria-hidden="true"></i>
       </a>
     </div>

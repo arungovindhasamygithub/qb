@@ -1,17 +1,34 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Robo_Head_Content from './Robo_Head_Content';
+import { gsap } from 'gsap'; // Import GSAP library for animations
 
 const RoboFest2024 = () => {
   const roboFestRef = useRef(null);
 
+  useEffect(() => {
+    // GSAP animation timeline
+    const tl = gsap.timeline({ defaults: { ease: "power3.inOut" } });
+
+    // Fade in animation for main content
+    tl.from(roboFestRef.current, { opacity: 0, duration: 1, delay: 0.5 });
+
+    // Animation for each highlight section
+    gsap.utils.toArray(".highlight-section").forEach(section => {
+      tl.from(section, { opacity: 0, y: 50, duration: 0.8 }, "-=0.3");
+    });
+
+    // Ensure to clean up GSAP animation when component unmounts
+    return () => tl.kill();
+
+  }, []);
+
   return (
     <div ref={roboFestRef} className="px-6 py-14 md:px-10 md:py-16 lg:pb-12 bg-gray-100">
 
-<Robo_Head_Content />
+      <Robo_Head_Content />
 
-     
       <div className="flex flex-col lg:flex-row lg:gap-16">
-        <div className="flex-1 p-8 rounded-lg shadow-md mb-8 lg:mb-0 lg:order-2">
+        <div className="flex-1 p-8 rounded-lg shadow-md mb-8 lg:mb-0 lg:order-2 highlight-section">
           <h3 className="text-2xl font-bold text-[#202658] mb-4 text-center">
             Discover our <span className="text-blue-600">Robotics and Coding</span> courses and win exciting prizes.
           </h3>
@@ -39,19 +56,19 @@ const RoboFest2024 = () => {
           <div className="bg-white p-8 rounded-lg shadow-md" style={{ margin: '0 20px' }}>
             <h3 className="text-3xl text-[#345ABC] font-bold mb-6 text-center">Event Highlights</h3>
             <div className="space-y-6">
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 highlight-section">
                 <div>
                   <h4 className="text-[#202658] text-xl font-semibold text-blue-600 font-bold">RoboRace Challenge</h4>
                   <p className="text-[#202658]">Enjoy an evening of fun and excitement with our <span className="">RoboRace Challenge</span>, where kids can participate in thrilling robot races and showcase their skills.</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 highlight-section">
                 <div>
                   <h4 className="text-[#202658] text-xl font-semibold text-blue-600 font-bold">Hands-On Workshop</h4>
                   <p className="text-[#202658]">Engage in interactive hands-on sessions where kids can experience the fascinating world of robotics firsthand. Learn about the tools and technologies that power modern robots.</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 highlight-section">
                 <div>
                   <h4 className="text-[#202658] text-xl font-semibold text-blue-600 font-bold">Showcase of Various BOTS</h4>
                   <p className="text-[#202658]">Discover an array of robots on display, each demonstrating unique working principles and capabilities. See the innovative creations of our talented students and get inspired.</p>
