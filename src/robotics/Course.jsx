@@ -12,37 +12,31 @@ const Course = () => {
       src: Course_1,
       title: 'Robo Starter',
       description: 'This course is designed for young enthusiasts to start their journey into robotics. They will learn the basics of robotics and coding through fun and interactive modules.',
-      rating: 'Level 1',
     },
     {
       src: Course_2,
       title: 'Robo Explorers',
       description: 'In this course, students will explore the world of robotics more deeply, gaining hands-on experience with various robotic systems and learning advanced coding techniques.',
-      rating: 'Level 2',
     },
     {
       src: Course_3,
       title: 'Code Crafters',
       description: 'Code Crafters focuses on teaching kids how to create and craft their own code. They will work on projects that enhance their logical thinking and problem-solving skills.',
-      rating: 'Level 3',
     },
     {
       src: Course_4,
       title: 'Robo Champion',
       description: 'This course is for older students who want to become champions in robotics. It covers advanced topics and complex projects that will challenge and inspire them.',
-      rating: 'Level 4',
     },
     {
       src: Course_5,
       title: 'App Wizard',
       description: 'App Wizard is perfect for teens interested in app development. They will learn to design, develop, and deploy their own applications, gaining valuable skills for the future.',
-      rating: 'Level 5',
     },
     {
       src: Course_6,
       title: 'Robo Engineer',
       description: 'Robo Engineer is an advanced course for students who aspire to become robotics engineers. It covers in-depth engineering principles and hands-on projects.',
-      rating: 'Level 6',
     },
   ];
 
@@ -61,12 +55,6 @@ const Course = () => {
               <div className="p-4">
                 <h3 className="text-lg font-bold mb-2">{course.title}</h3>
                 <p className="text-gray-600 mb-4">{course.description}</p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center text-yellow-500">
-                    <i className="fas fa-star"></i>
-                    <p className="ml-2 text-sm text-gray-700">{course.rating}</p>
-                  </div>
-                </div>
               </div>
             </div>
           ))}

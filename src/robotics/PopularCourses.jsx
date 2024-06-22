@@ -51,7 +51,7 @@ const PopularCourses = () => {
   return (
     <div className="py-12">
       <section className="container mx-auto px-6 lg:px-24">
-        <h1 className="text-center text-4xl font-bold mb-8 text-white">Popular Courses</h1>
+        <h1 className="text-center text-4xl font-bold mb-8 ">Popular Courses</h1>
 
         {/* Mobile View (Slider) */}
         <div className="mb-8 md:hidden">
