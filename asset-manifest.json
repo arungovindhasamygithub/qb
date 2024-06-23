@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/qb/static/css/main.3e52d20a.css",
-    "main.js": "/qb/static/js/main.0dc5596b.js",
+    "main.js": "/qb/static/js/main.67808a51.js",
     "static/media/robotics.png": "/qb/static/media/robotics.f3e4864ff73d6a93a0ea.png",
     "static/media/Coding.png": "/qb/static/media/Coding.85953d10e52fb093735a.png",
     "static/media/Course_9.png": "/qb/static/media/Course_9.84b66b7118791293460e.png",
@@ -19,8 +19,8 @@
     "static/media/Course_12.png": "/qb/static/media/Course_12.9a070e40801bbd2cb618.png",
     "static/media/Course_7.png": "/qb/static/media/Course_7.c5a91e917bfad4146acb.png",
     "static/media/Future.png": "/qb/static/media/Future.128c255daca9f7fe4455.png",
+    "static/media/event.png": "/qb/static/media/event.17edcf668ca8719771d7.png",
     "static/media/Course_6.png": "/qb/static/media/Course_6.daa96c41a93b8ce35452.png",
-    "static/media/event.png": "/qb/static/media/event.78fad1ae00a0342533c4.png",
     "static/media/Oto.png": "/qb/static/media/Oto.c5ef34f47b42ddc300e5.png",
     "static/media/main.png": "/qb/static/media/main.61ae90562535f0842140.png",
     "static/media/Java.png": "/qb/static/media/Java.231b03d08a04e30fac35.png",
@@ -47,10 +47,10 @@
     "static/media/plus.svg": "/qb/static/media/plus.17a68b59f0f0e088dab0de6fecd891b8.svg",
     "static/media/one.svg": "/qb/static/media/one.3a2760321d5bf60b4489cfd857f182ac.svg",
     "main.3e52d20a.css.map": "/qb/static/css/main.3e52d20a.css.map",
-    "main.0dc5596b.js.map": "/qb/static/js/main.0dc5596b.js.map"
+    "main.67808a51.js.map": "/qb/static/js/main.67808a51.js.map"
   },
   "entrypoints": [
     "static/css/main.3e52d20a.css",
-    "static/js/main.0dc5596b.js"
+    "static/js/main.67808a51.js"
   ]
 }
