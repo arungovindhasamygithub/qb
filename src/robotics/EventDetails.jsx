@@ -74,7 +74,7 @@ const EventDetails = () => {
 
       <div className="text-center">
         <a
-          href="https://info172.mojo.page/power-up-your-career-in-2-hours-insga"
+          href="https://pages.razorpay.com/pl_OOcuhQQsCTdtaA/view"
           id="addtocartthree"
           className="inline-block bg-blue-500 text-white py-3 md:py-5 px-4 md:px-6 rounded-lg hover:bg-blue-600 text-lg md:text-2xl"
         >
