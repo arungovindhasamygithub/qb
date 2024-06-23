@@ -9,6 +9,7 @@ import Course1 from './Course1';
 import Footer1 from './Footer1';
 import PreviousWorkshopVideos from './PreviousWorkshopVideos';
 import PopularCourses from './PopularCourses';
+import EventSection from './EventSection';
 
 const Robotics = () => {
 
@@ -43,6 +44,12 @@ const Robotics = () => {
       <div id="faq">
         <FAQ />
       </div>
+
+
+
+      <EventSection />
+
+
       
       <div id="contact">
         <Footer1 />

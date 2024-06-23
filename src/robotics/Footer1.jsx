@@ -24,7 +24,7 @@ const Footer1 = () => {
               <li><a href="#courses" className="text-gray-300 hover:text-white">Our Courses</a></li>
               <li><a href="#why-robotics" className="text-gray-300 hover:text-white">Why Robotics</a></li>
               <li><a href="#workshops" className="text-gray-300 hover:text-white">Our Workshops</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-white">Contact</a></li>
+            
             </ul>
           </div>
           {/* Social Media and Copyright */}
@@ -48,22 +48,9 @@ const Footer1 = () => {
         <hr className="border-gray-700 my-6" />
         {/* Copyright */}
         <div className="text-center text-gray-400 text-sm">
-          <div className="flex justify-between items-center mr-12">
-            <p className="float-left">&copy; 2024 QBee Academy. All rights reserved.</p>
-            <div className="text-right">
-              <a href="#" className="text-gray-300 hover:text-white mr-4">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white mr-4">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white mr-4">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-            </div>
+          <div className=" items-center mr-12">
+            <p className="text-center">&copy; 2024 QBee Academy. All rights reserved.</p>
+           
           </div>
         </div>
       </div>
