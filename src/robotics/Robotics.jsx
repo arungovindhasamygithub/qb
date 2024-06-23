@@ -10,6 +10,7 @@ import Footer1 from './Footer1';
 import PreviousWorkshopVideos from './PreviousWorkshopVideos';
 import PopularCourses from './PopularCourses';
 import EventSection from './EventSection';
+import EventDetails from './EventDetails';
 
 const Robotics = () => {
 
@@ -26,7 +27,7 @@ const Robotics = () => {
       <div id="robofest" className="relative z-0">
         <RoboFest_2024 />
       </div>
-      
+      <EventDetails />
       <div id="courses">
         <PopularCourses />
         <Course />

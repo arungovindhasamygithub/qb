@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const BonusesSection = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date(`2024-06-30T23:59:59`) - +new Date();
+    const difference = +new Date(`2024-07-14T23:59:59`) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
